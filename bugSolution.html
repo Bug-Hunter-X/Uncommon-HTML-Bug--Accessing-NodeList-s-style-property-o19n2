@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug Solution</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text should be blue.
+  </div>
+  <div id="myDiv2">
+    This text should also be blue.
+  </div>
+  <script>
+    const divs = document.querySelectorAll('div');
+    for (let i = 0; i < divs.length; i++) {
+      divs[i].style.color = 'blue';
+    }
+  </script>
+</body>
+</html>
