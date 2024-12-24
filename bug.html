@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text should be visible.
+  </div>
+
+  <script>
+    // Incorrectly attempting to access a non-existent property of a NodeList
+    document.querySelectorAll('div').style.color = 'blue';
+  </script>
+</body>
+</html>
